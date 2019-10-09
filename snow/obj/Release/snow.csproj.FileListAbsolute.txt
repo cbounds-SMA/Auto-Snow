@@ -1,0 +1,16 @@
+C:\Users\bounds\source\repos\snow\snow\bin\Release\snowauto.exe.config
+C:\Users\bounds\source\repos\snow\snow\bin\Release\snowauto.exe.manifest
+C:\Users\bounds\source\repos\snow\snow\bin\Release\snowauto.application
+C:\Users\bounds\source\repos\snow\snow\bin\Release\snowauto.exe
+C:\Users\bounds\source\repos\snow\snow\bin\Release\snowauto.pdb
+C:\Users\bounds\source\repos\snow\snow\bin\Release\Newtonsoft.Json.dll
+C:\Users\bounds\source\repos\snow\snow\bin\Release\WebDriver.dll
+C:\Users\bounds\source\repos\snow\snow\bin\Release\Newtonsoft.Json.xml
+C:\Users\bounds\source\repos\snow\snow\bin\Release\WebDriver.xml
+C:\Users\bounds\source\repos\snow\snow\obj\Release\snow.csprojAssemblyReference.cache
+C:\Users\bounds\source\repos\snow\snow\obj\Release\snow.csproj.CoreCompileInputs.cache
+C:\Users\bounds\source\repos\snow\snow\obj\Release\snowauto.exe.manifest
+C:\Users\bounds\source\repos\snow\snow\obj\Release\snowauto.application
+C:\Users\bounds\source\repos\snow\snow\obj\Release\snow.csproj.CopyComplete
+C:\Users\bounds\source\repos\snow\snow\obj\Release\snowauto.exe
+C:\Users\bounds\source\repos\snow\snow\obj\Release\snowauto.pdb
