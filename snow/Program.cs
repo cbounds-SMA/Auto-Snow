@@ -124,15 +124,17 @@ namespace snow
                 IWebElement incidentCategory = driver.FindElement(By.Id("incident.category"));
                 incidentCategory.SendKeys(ticketData["category"]);
                 incidentCategory.SendKeys(Keys.Return);
-                Thread.Sleep(shortsleep);
+                Thread.Sleep(mediumsleep);
                 IWebElement incidentSubCategory1 = driver.FindElement(By.Id("incident.subcategory"));
                 incidentSubCategory1.SendKeys(ticketData["subcategory"]);
-                incidentSubCategory1.SendKeys(Keys.Return);
                 Thread.Sleep(shortsleep);
+                incidentSubCategory1.SendKeys(Keys.Return);
+                Thread.Sleep(mediumsleep);
                 IWebElement incidentSubCategory2 = driver.FindElement(By.Id("incident.u_category3"));
                 incidentSubCategory2.SendKeys(ticketData["subcategory2"]);
-                incidentSubCategory2.SendKeys(Keys.Return);
                 Thread.Sleep(shortsleep);
+                incidentSubCategory2.SendKeys(Keys.Return);
+                Thread.Sleep(mediumsleep);
                 IWebElement cmdb_ci = driver.FindElement(By.Id("sys_display.incident.cmdb_ci"));
                 cmdb_ci.SendKeys(ticketData["computerName"]);
                 cmdb_ci.SendKeys(Keys.Return);
@@ -152,6 +154,7 @@ namespace snow
                 {
                     IWebElement assigned_to = driver.FindElement(By.Id("sys_display.incident.assigned_to"));
                     assigned_to.SendKeys(ticketData["closedBy"]);
+                    Thread.Sleep(shortsleep);
                     assigned_to.SendKeys(Keys.Return);
                     Thread.Sleep(shortsleep);
                     IWebElement incident_state = driver.FindElement(By.Id("incident.incident_state"));
@@ -166,18 +169,22 @@ namespace snow
                     Thread.Sleep(shortsleep);
                     IWebElement close_code_2 = driver.FindElement(By.Id("incident.u_sub_close_code_2"));
                     close_code_2.SendKeys(ticketData["resolutionCauseCodeSub1"]);
+                    Thread.Sleep(shortsleep);
                     close_code_2.SendKeys(Keys.Return);
                     Thread.Sleep(shortsleep);
                     IWebElement resolution_code = driver.FindElement(By.Id("incident.u_resolution_code"));
                     resolution_code.SendKeys(ticketData["resolutionCode"]);
+                    Thread.Sleep(shortsleep);
                     resolution_code.SendKeys(Keys.Return);
                     Thread.Sleep(shortsleep);
                     IWebElement close_code = driver.FindElement(By.Id("incident.close_code"));
                     close_code.SendKeys("Resolved");
+                    Thread.Sleep(shortsleep);
                     close_code.SendKeys(Keys.Return);
                     Thread.Sleep(shortsleep);
                     IWebElement close_notes = driver.FindElement(By.Id("incident.close_notes"));
                     close_notes.SendKeys(ticketData["resolutionNotes"]);
+                    Thread.Sleep(shortsleep);
                     close_notes.SendKeys(Keys.Return);
                     Thread.Sleep(shortsleep);
                     driver.FindElement(By.XPath("//*[@id='6685b1c93744d7849d3b861754990ef8']")).Click();
@@ -187,7 +194,7 @@ namespace snow
             }
             catch
             {
-                Console.WriteLine("Error creating ticket");
+                Console.WriteLine("Error creating ticket for user: " + ticketData["usr"]);
             }
         }
     }
